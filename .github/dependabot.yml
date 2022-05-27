@@ -5,11 +5,3 @@ updates:
     # Look for `package.json` and `lock` files in the `root` directory
     directory: "/"
     # Check the npm registry for updates every day (weekdays)
-    schedule:
-      interval: "daily"
-   - steps:
-       run: gh pr merge --auto --merge "$PR_URL"
-       env:
-       PR_URL: ${{github.event.pull_request.html_url}}
-              # The documentation incorrectly forgets `GITHUB_TOKEN` here.
-       GITHUB_TOKEN: ${{secrets.MYTOKEN}}
