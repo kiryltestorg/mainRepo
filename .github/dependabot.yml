@@ -7,7 +7,7 @@ updates:
     # Check the npm registry for updates every day (weekdays)
     schedule:
       interval: "daily"
-  
+   - steps:
        run: gh pr merge --auto --merge "$PR_URL"
        env:
        PR_URL: ${{github.event.pull_request.html_url}}
