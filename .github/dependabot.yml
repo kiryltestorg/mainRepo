@@ -7,3 +7,9 @@ updates:
     # Check the npm registry for updates every day (weekdays)
     schedule:
       interval: "daily"
+   - name: Enable auto-merge for Dependabot PRs
+       run: gh pr merge --auto --merge "$PR_URL"
+       env:
+       PR_URL: ${{github.event.pull_request.html_url}}
+              # The documentation incorrectly forgets `GITHUB_TOKEN` here.
+       GITHUB_TOKEN: ${{secrets.MYTOKEN}}
