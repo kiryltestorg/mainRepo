@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: kiryl1/testaction@v1.1.1
+        uses: kiryl1/testaction@v1.1.2
         with:
           accessKeyId: ${{ secrets.ACCESSKEY }}
           secretAccessKey: ${{ secrets.SECRET }}
