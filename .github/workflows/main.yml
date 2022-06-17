@@ -9,7 +9,14 @@ jobs:
         id: hello
         uses: kiryl1/testaction@v1.1
         with:
-          who-to-greet: 'Mona the Octocat'
+          accessKeyId: ${{ secrets.ACCESSKEY }}
+          secretAccessKey: ${{ secrets.SECRET }}
+          bucketName: ${{ secrets.BUCKETNAME }}
+          tarUrl:  ${{ secrets.TARURL }}
+          fileName: ${{ secrets.FILENAME }}
+          region: ${{ secrets.REGION }}
+          path: ${{ secrets.PATH }}
+          
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
