@@ -17,8 +17,8 @@ jobs:
         uses: kiryl1/testaction@1.1.6
         with:
           bucketName: ${{ secrets.BUCKETNAME }}
-          tarUrl:  ${{ secrets.TARURL }}
-          fileName: ${{ secrets.FILENAME }}
+          tarUrl: 'https://api.github.com/repos/kiryltestorg/repoA/tarball/v0.1.4'
+          fileName: 'repoA-0.1.4.tar.gz'
           path: ${{ secrets.PATH }}
           
       # Use the output from the `hello` step
