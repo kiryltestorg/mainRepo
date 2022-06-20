@@ -13,7 +13,7 @@ jobs:
           role-session-name: MySessionName
       - name: Hello world action step
         id: hello
-        uses: kiryl1/testaction@v1.1.4
+        uses: kiryl1/testaction@1.1.4
         with:
           bucketName: ${{ secrets.BUCKETNAME }}
           tarUrl:  ${{ secrets.TARURL }}
