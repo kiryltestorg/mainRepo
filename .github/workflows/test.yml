@@ -9,12 +9,26 @@ jobs:
     strategy:
       matrix:
         include:
-          - dep: 'containerD'
-          - dep: 'Lima'
-          - dep: 'QEMU'
+          - dep: 'repoA'
+          - dep: 'repoB'
+          - dep: 'repoC'
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-        
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-region: ${{ secrets.REGION }}
+          role-to-assume: ${{ secrets.ROLE }}
+          role-session-name: MySessionName
+      - name: Sync Dependencies
+        uses: kiryl1/testaction@1.3.5
+        with:
+          token: ${{ secrets.TOKEN }}
+          bucketName: ${{ secrets.BUCKETNAME }}
+          path: ${{ secrets.PATH }}
+          repo: ${{matrix.dep}}
+          depPath: ${{ github.workspace }}/dependencies.json
+          
       - name: test
         run: echo ${{ matrix.dep }}
