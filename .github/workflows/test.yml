@@ -1,0 +1,20 @@
+name: test
+
+on:
+  workflow_dispatch:
+  
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - dep: 'containerD'
+          - dep: 'Lima'
+          - dep: 'QEMU'
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        
+      - name: test
+        run: echo ${{ matrix.dep }}
