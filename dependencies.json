@@ -1,14 +1,14 @@
 {
     "repoA":{
         "path" : "Dependencies/repoA",
-        "github_url": "https://github.com/kiryltestorg/repoA"
+        "github_url": "kiryltestorg/repoA"
     },
     "repoB":{
         "path" : "Dependencies/repoB",
-        "github_url": "https://github.com/kiryltestorg/repoB"
+        "github_url": "kiryltestorg/repoB"
     },
     "repoC":{
         "path" : "Dependencies/repoC",
-        "github_url": "https://github.com/kiryltestorg/repoC"
+        "github_url": "kiryltestorg/repoC"
     }
 }
