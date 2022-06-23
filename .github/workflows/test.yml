@@ -9,9 +9,9 @@ jobs:
     strategy:
       matrix:
         include:
-          - dep: 'repoA'
-          - dep: 'repoB'
-          - dep: 'repoC'
+          - dep: 'role'
+          - dep: 'dep2'
+          - dep: 'dep3'
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -19,7 +19,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-region: ${{ secrets.REGION }}
-          role-to-assume: ${{ secrets.dep2 }}
+          role-to-assume: ${{ secrets.${{ matrix.dep }} }}
           role-session-name: ${{matrix.dep}} 
       - name: Sync Dependencies
         uses: kiryl1/testaction@1.3.6
