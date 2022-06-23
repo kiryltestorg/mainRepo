@@ -19,7 +19,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-region: ${{ secrets.REGION }}
-          role-to-assume: ${{ secrets.ROLE }}
+          role-to-assume: ${{ secrets.dep2 }}
           role-session-name: ${{matrix.dep}} 
       - name: Sync Dependencies
         uses: kiryl1/testaction@1.3.6
