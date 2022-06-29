@@ -10,9 +10,8 @@ jobs:
     strategy:
       matrix:
         include:
-          - dep: 'repoA'
-          - dep: 'repoB'
-          - dep: 'repoC'
+          - dep: "['repoA', 'repoB', 'repoC']"
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
