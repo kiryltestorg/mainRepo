@@ -27,7 +27,7 @@ jobs:
           bucketName: ${{ secrets.BUCKETNAME }}
           path: ${{ secrets.PATH }}
           repo: ${{matrix.dep}}
-          depPath: ${{ github.workspace }}/dependencies.json
+          depPath: ${{ github.workspace }}/Dependencies
           
       - name: test
         run: echo ${{ matrix.dep }}
