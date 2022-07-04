@@ -2,6 +2,7 @@
   "repoB":{
         "path" : "Dependencies/repoB",
         "github_url": "kiryltestorg/repoB",
-        "last_updated" : ""
+        "last_updated" : "",
+        "SHA256":""
     }
 }
