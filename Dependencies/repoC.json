@@ -1,8 +1,8 @@
 {
-    "repoC":{
+
             "path" : "Dependencies/repoC",
             "github_url": "kiryltestorg/repoC",
             "last_updated" : "",
             "SHA256":""
-        }
+        
 }
