@@ -27,7 +27,7 @@ jobs:
       - name: test
         run: ls
       - name: Sync Dependencies
-        uses: kiryltestorg/praction@v0.2.9
+        uses: kiryltestorg/praction@v0.3.0
         with:
           token: ${{ secrets.TOKEN }}
           bucketName: ${{ secrets.BUCKETNAME }}
