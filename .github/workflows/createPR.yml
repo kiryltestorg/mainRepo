@@ -20,6 +20,10 @@ jobs:
           aws-region: ${{ secrets.REGION }}
           role-to-assume: ${{ secrets.ROLE }}
           role-session-name: MySessionName
+      - name: setup git config
+        run: |
+          git config user.name "Actions Bot"
+          git config user.email "<>"
       - name: Sync Dependencies
         uses: kiryltestorg/praction@v0.1.3
         with:
