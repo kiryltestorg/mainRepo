@@ -34,4 +34,4 @@ jobs:
           depPath: ${{ github.workspace }}/Dependencies
           
       - name: test
-        run: echo ${{ matrix.dep }}
+        run: ls
