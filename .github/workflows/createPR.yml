@@ -25,7 +25,7 @@ jobs:
           git config user.name "Actions Bot"
           git config user.email "<>"
       - name: Sync Dependencies
-        uses: kiryltestorg/praction@v0.2.4
+        uses: kiryltestorg/praction@v0.2.5
         with:
           token: ${{ secrets.TOKEN }}
           bucketName: ${{ secrets.BUCKETNAME }}
