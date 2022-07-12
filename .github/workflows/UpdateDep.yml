@@ -10,7 +10,9 @@ jobs:
     strategy:
       matrix:
         include:
-          - dep: "repoA,repoB,repoC"
+          - dep: "repoA"
+          - dep: "repoB"
+          - dep: "repoC"
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
