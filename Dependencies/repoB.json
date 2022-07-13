@@ -1,8 +1,1 @@
-{ 
- 
-        "path" : "Dependencies/repoB",
-        "github_url": "kiryltestorg/repoB",
-        "last_updated" : "",
-        "SHA256":""
-    
-}
+{"path":"Dependencies/repoB","github_url":"kiryltestorg/repoB","last_updated":""}
