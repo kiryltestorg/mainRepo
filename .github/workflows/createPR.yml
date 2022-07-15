@@ -25,7 +25,7 @@ jobs:
       - name: test
         run: ls
       - name: Create Pull Request
-        uses: kiryltestorg/praction@v0.6.3
+        uses: kiryltestorg/praction@v0.6.4
         with:
           token: ${{ secrets.TOKEN }}
           bucketName: ${{ secrets.BUCKETNAME }}
