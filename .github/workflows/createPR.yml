@@ -7,10 +7,6 @@ permissions:
 jobs:
   test:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        include:
-          - dep: "repoA,repoB,repoC"
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
