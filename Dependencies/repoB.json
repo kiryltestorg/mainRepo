@@ -1,8 +1,1 @@
-{
-    "path": "Dependencies/repoB",
-    "github_url": "kiryltestorg/repoB",
-    "last_updated": "Fri, 22 Jul 2022 19:21:35 GMT",
-    "SHA512": "c22843195c9f43352a8f472b613f1dbe49e665604d75adabc9d01c7cfa73e90634eac35d1ee80966f01f89026b85a876fb18f8074ed659c5e28cd13db7f358fc",
-    "version":"",
-    "freeze":false
-}
+{"path":"Dependencies/repoB","github_url":"kiryltestorg/repoB","last_updated":"Mon, 25 Jul 2022 22:07:28 GMT","SHA512":"c22843195c9f43352a8f472b613f1dbe49e665604d75adabc9d01c7cfa73e90634eac35d1ee80966f01f89026b85a876fb18f8074ed659c5e28cd13db7f358fc","version":"v0.1.8","freeze":false}
