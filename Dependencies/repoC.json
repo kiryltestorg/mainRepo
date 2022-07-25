@@ -1,1 +1,8 @@
-{"path":"Dependencies/repoC","github_url":"kiryltestorg/repoC","last_updated":"Fri, 22 Jul 2022 19:21:35 GMT","SHA512":"266871f4c1425fe3d002fd5decec41adb4f5f1cef1fedd8529ddc8adde93d266f7a29a70b02e55df2e3e9a37fe12488b2820644bc2d864baac8064c2e89ff903"}
+{
+    "path": "Dependencies/repoC",
+    "github_url": "kiryltestorg/repoC",
+    "last_updated": "Fri, 22 Jul 2022 19:21:35 GMT",
+    "SHA512": "266871f4c1425fe3d002fd5decec41adb4f5f1cef1fedd8529ddc8adde93d266f7a29a70b02e55df2e3e9a37fe12488b2820644bc2d864baac8064c2e89ff903",
+    "version":"",
+    "freeze":"false"
+}
