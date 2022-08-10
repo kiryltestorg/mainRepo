@@ -27,7 +27,6 @@ jobs:
         with:
           token: ${{ secrets.TOKEN }}
           bucketName: ${{ secrets.BUCKETNAME }}
-          path: ${{ secrets.PATH }}
           repo: ${{matrix.dep}}
           depPath: ${{ github.workspace }}/dependencies.json
           
