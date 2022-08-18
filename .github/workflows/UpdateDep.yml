@@ -23,7 +23,7 @@ jobs:
           role-to-assume: ${{ secrets.ROLE }}
           role-session-name: MySessionName
       - name: Sync Dependencies
-        uses: kiryl1/testaction@v1.7.9
+        uses: kiryl1/testaction@v1.8.1
         with:
           token: ${{ secrets.TOKEN }}
           bucketName: ${{ secrets.BUCKETNAME }}
