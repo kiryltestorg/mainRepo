@@ -23,7 +23,7 @@ jobs:
           git config user.name "Actions Bot"
           git config user.email "<>"
       - name: Create Pull Request
-        uses: kiryltestorg/praction@v0.7.9
+        uses: kiryltestorg/praction@v0.8.0
         with:
           token: ${{ secrets.TOKEN }}
           bucketName: ${{ secrets.BUCKETNAME }}
